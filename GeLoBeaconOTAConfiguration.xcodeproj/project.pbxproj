@@ -1,0 +1,686 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB0759CF18F6E5AE003269F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0759CE18F6E5AE003269F7 /* Foundation.framework */; };
+		AB0759D118F6E5AE003269F7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0759D018F6E5AE003269F7 /* CoreGraphics.framework */; };
+		AB0759D318F6E5AE003269F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0759D218F6E5AE003269F7 /* UIKit.framework */; };
+		AB0759D918F6E5AE003269F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB0759D718F6E5AE003269F7 /* InfoPlist.strings */; };
+		AB0759DB18F6E5AE003269F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0759DA18F6E5AE003269F7 /* main.m */; };
+		AB0759DF18F6E5AE003269F7 /* GeLoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0759DE18F6E5AE003269F7 /* GeLoAppDelegate.m */; };
+		AB0759E218F6E5AE003269F7 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB0759E018F6E5AE003269F7 /* Main_iPhone.storyboard */; };
+		AB0759E518F6E5AE003269F7 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB0759E318F6E5AE003269F7 /* Main_iPad.storyboard */; };
+		AB0759EA18F6E5AE003269F7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB0759E918F6E5AE003269F7 /* Images.xcassets */; };
+		AB0759F118F6E5AE003269F7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0759F018F6E5AE003269F7 /* XCTest.framework */; };
+		AB0759F218F6E5AE003269F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0759CE18F6E5AE003269F7 /* Foundation.framework */; };
+		AB0759F318F6E5AE003269F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0759D218F6E5AE003269F7 /* UIKit.framework */; };
+		AB0759FB18F6E5AE003269F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB0759F918F6E5AE003269F7 /* InfoPlist.strings */; };
+		AB0759FD18F6E5AE003269F7 /* GeLoBeaconOTAConfigurationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0759FC18F6E5AE003269F7 /* GeLoBeaconOTAConfigurationTests.m */; };
+		AB075AC818F82F1A003269F7 /* GeLoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB075AC718F82F1A003269F7 /* GeLoViewController.m */; };
+		AB075ACC18F83000003269F7 /* UIViewController+UserInfoDict.m in Sources */ = {isa = PBXBuildFile; fileRef = AB075ACB18F83000003269F7 /* UIViewController+UserInfoDict.m */; };
+		AB075ACE18F839D7003269F7 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB075ACD18F839D7003269F7 /* CoreBluetooth.framework */; };
+		AB075AD118F860CF003269F7 /* GeLoDevicePropertyListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB075AD018F860CF003269F7 /* GeLoDevicePropertyListViewController.m */; };
+		AB56132018FDC060002819B7 /* GeLoAdvIntervalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB56131F18FDC060002819B7 /* GeLoAdvIntervalViewController.m */; };
+		AB56132318FDC430002819B7 /* GeLoAdvUUIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB56132218FDC430002819B7 /* GeLoAdvUUIDViewController.m */; };
+		AB56132618FDC43B002819B7 /* GeLoAdvMajorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB56132518FDC43B002819B7 /* GeLoAdvMajorViewController.m */; };
+		AB56132918FDC444002819B7 /* GeLoAdvMinorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB56132818FDC444002819B7 /* GeLoAdvMinorViewController.m */; };
+		AB56132C18FDC44F002819B7 /* GeLoPasscodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB56132B18FDC44F002819B7 /* GeLoPasscodeViewController.m */; };
+		AB56132F18FDC745002819B7 /* GeLoAdvChannelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB56132E18FDC745002819B7 /* GeLoAdvChannelsViewController.m */; };
+		AB56133218FDC752002819B7 /* GeLoAdvPowerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB56133118FDC752002819B7 /* GeLoAdvPowerViewController.m */; };
+		AB56133518FDD811002819B7 /* GeLoPropertyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB56133418FDD811002819B7 /* GeLoPropertyViewController.m */; };
+		AB56133A18FF0C60002819B7 /* GeLoAlertHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AB56133918FF0C60002819B7 /* GeLoAlertHelper.m */; };
+		AB56133D19016A2B002819B7 /* GeLoFactoryResetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB56133C19016A2B002819B7 /* GeLoFactoryResetViewController.m */; };
+		AB561347190575B5002819B7 /* GeLoDeviceListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB561346190575B5002819B7 /* GeLoDeviceListViewController.m */; };
+		AB56134C1905A899002819B7 /* UIViewController+Dismissal.m in Sources */ = {isa = PBXBuildFile; fileRef = AB56134B1905A899002819B7 /* UIViewController+Dismissal.m */; };
+		AB7106C61909A2EB005832C9 /* libGeLoFirmwareLibrary-public.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7106C51909A2EB005832C9 /* libGeLoFirmwareLibrary-public.a */; };
+		AF66EB9D6D4A45E0B629ADCE /* libPods-GeLoBeaconOTAConfiguration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C3F94F3F9EF432FBD9AC920 /* libPods-GeLoBeaconOTAConfiguration.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB0759F418F6E5AE003269F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB0759C318F6E5AE003269F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB0759CA18F6E5AE003269F7;
+			remoteInfo = GeLoBeaconOTAConfiguration;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		036CE64C2AB14D118E3C6499 /* Pods-GeLoBeaconOTAConfiguration.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeLoBeaconOTAConfiguration.xcconfig"; path = "Pods/Pods-GeLoBeaconOTAConfiguration.xcconfig"; sourceTree = "<group>"; };
+		5C3F94F3F9EF432FBD9AC920 /* libPods-GeLoBeaconOTAConfiguration.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GeLoBeaconOTAConfiguration.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB0759CB18F6E5AE003269F7 /* GeLoBeaconOTAConfiguration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeLoBeaconOTAConfiguration.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB0759CE18F6E5AE003269F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AB0759D018F6E5AE003269F7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AB0759D218F6E5AE003269F7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AB0759D618F6E5AE003269F7 /* GeLoBeaconOTAConfiguration-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GeLoBeaconOTAConfiguration-Info.plist"; sourceTree = "<group>"; };
+		AB0759D818F6E5AE003269F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AB0759DA18F6E5AE003269F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AB0759DC18F6E5AE003269F7 /* GeLoBeaconOTAConfiguration-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GeLoBeaconOTAConfiguration-Prefix.pch"; sourceTree = "<group>"; };
+		AB0759DD18F6E5AE003269F7 /* GeLoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeLoAppDelegate.h; sourceTree = "<group>"; };
+		AB0759DE18F6E5AE003269F7 /* GeLoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeLoAppDelegate.m; sourceTree = "<group>"; };
+		AB0759E118F6E5AE003269F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		AB0759E418F6E5AE003269F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		AB0759E918F6E5AE003269F7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AB0759EF18F6E5AE003269F7 /* GeLoBeaconOTAConfigurationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeLoBeaconOTAConfigurationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB0759F018F6E5AE003269F7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AB0759F818F6E5AE003269F7 /* GeLoBeaconOTAConfigurationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GeLoBeaconOTAConfigurationTests-Info.plist"; sourceTree = "<group>"; };
+		AB0759FA18F6E5AE003269F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AB0759FC18F6E5AE003269F7 /* GeLoBeaconOTAConfigurationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeLoBeaconOTAConfigurationTests.m; sourceTree = "<group>"; };
+		AB075AC618F82F1A003269F7 /* GeLoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeLoViewController.h; sourceTree = "<group>"; };
+		AB075AC718F82F1A003269F7 /* GeLoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeLoViewController.m; sourceTree = "<group>"; };
+		AB075ACA18F83000003269F7 /* UIViewController+UserInfoDict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+UserInfoDict.h"; sourceTree = "<group>"; };
+		AB075ACB18F83000003269F7 /* UIViewController+UserInfoDict.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+UserInfoDict.m"; sourceTree = "<group>"; };
+		AB075ACD18F839D7003269F7 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		AB075ACF18F860CF003269F7 /* GeLoDevicePropertyListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeLoDevicePropertyListViewController.h; sourceTree = "<group>"; };
+		AB075AD018F860CF003269F7 /* GeLoDevicePropertyListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeLoDevicePropertyListViewController.m; sourceTree = "<group>"; };
+		AB56131E18FDC060002819B7 /* GeLoAdvIntervalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeLoAdvIntervalViewController.h; sourceTree = "<group>"; };
+		AB56131F18FDC060002819B7 /* GeLoAdvIntervalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeLoAdvIntervalViewController.m; sourceTree = "<group>"; };
+		AB56132118FDC430002819B7 /* GeLoAdvUUIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeLoAdvUUIDViewController.h; sourceTree = "<group>"; };
+		AB56132218FDC430002819B7 /* GeLoAdvUUIDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeLoAdvUUIDViewController.m; sourceTree = "<group>"; };
+		AB56132418FDC43B002819B7 /* GeLoAdvMajorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeLoAdvMajorViewController.h; sourceTree = "<group>"; };
+		AB56132518FDC43B002819B7 /* GeLoAdvMajorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeLoAdvMajorViewController.m; sourceTree = "<group>"; };
+		AB56132718FDC444002819B7 /* GeLoAdvMinorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeLoAdvMinorViewController.h; sourceTree = "<group>"; };
+		AB56132818FDC444002819B7 /* GeLoAdvMinorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeLoAdvMinorViewController.m; sourceTree = "<group>"; };
+		AB56132A18FDC44F002819B7 /* GeLoPasscodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeLoPasscodeViewController.h; sourceTree = "<group>"; };
+		AB56132B18FDC44F002819B7 /* GeLoPasscodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeLoPasscodeViewController.m; sourceTree = "<group>"; };
+		AB56132D18FDC745002819B7 /* GeLoAdvChannelsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeLoAdvChannelsViewController.h; sourceTree = "<group>"; };
+		AB56132E18FDC745002819B7 /* GeLoAdvChannelsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeLoAdvChannelsViewController.m; sourceTree = "<group>"; };
+		AB56133018FDC752002819B7 /* GeLoAdvPowerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeLoAdvPowerViewController.h; sourceTree = "<group>"; };
+		AB56133118FDC752002819B7 /* GeLoAdvPowerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeLoAdvPowerViewController.m; sourceTree = "<group>"; };
+		AB56133318FDD811002819B7 /* GeLoPropertyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeLoPropertyViewController.h; sourceTree = "<group>"; };
+		AB56133418FDD811002819B7 /* GeLoPropertyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeLoPropertyViewController.m; sourceTree = "<group>"; };
+		AB56133818FF0C60002819B7 /* GeLoAlertHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GeLoAlertHelper.h; path = Helpers/GeLoAlertHelper.h; sourceTree = "<group>"; };
+		AB56133918FF0C60002819B7 /* GeLoAlertHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GeLoAlertHelper.m; path = Helpers/GeLoAlertHelper.m; sourceTree = "<group>"; };
+		AB56133B19016A2B002819B7 /* GeLoFactoryResetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeLoFactoryResetViewController.h; sourceTree = "<group>"; };
+		AB56133C19016A2B002819B7 /* GeLoFactoryResetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeLoFactoryResetViewController.m; sourceTree = "<group>"; };
+		AB561345190575B5002819B7 /* GeLoDeviceListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeLoDeviceListViewController.h; sourceTree = "<group>"; };
+		AB561346190575B5002819B7 /* GeLoDeviceListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeLoDeviceListViewController.m; sourceTree = "<group>"; };
+		AB5613481905A1E1002819B7 /* GeLoDeviceListDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GeLoDeviceListDelegate.h; path = Protocols/GeLoDeviceListDelegate.h; sourceTree = "<group>"; };
+		AB56134A1905A899002819B7 /* UIViewController+Dismissal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Dismissal.h"; sourceTree = "<group>"; };
+		AB56134B1905A899002819B7 /* UIViewController+Dismissal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Dismissal.m"; sourceTree = "<group>"; };
+		AB7106C51909A2EB005832C9 /* libGeLoFirmwareLibrary-public.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libGeLoFirmwareLibrary-public.a"; path = "GeLoBeaconOTAConfiguration/lib/libGeLoFirmwareLibrary-public.a"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB0759C818F6E5AE003269F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB7106C61909A2EB005832C9 /* libGeLoFirmwareLibrary-public.a in Frameworks */,
+				AB075ACE18F839D7003269F7 /* CoreBluetooth.framework in Frameworks */,
+				AB0759D118F6E5AE003269F7 /* CoreGraphics.framework in Frameworks */,
+				AB0759D318F6E5AE003269F7 /* UIKit.framework in Frameworks */,
+				AB0759CF18F6E5AE003269F7 /* Foundation.framework in Frameworks */,
+				AF66EB9D6D4A45E0B629ADCE /* libPods-GeLoBeaconOTAConfiguration.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB0759EC18F6E5AE003269F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB0759F118F6E5AE003269F7 /* XCTest.framework in Frameworks */,
+				AB0759F318F6E5AE003269F7 /* UIKit.framework in Frameworks */,
+				AB0759F218F6E5AE003269F7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB0759C218F6E5AE003269F7 = {
+			isa = PBXGroup;
+			children = (
+				AB0759D418F6E5AE003269F7 /* GeLoBeaconOTAConfiguration */,
+				AB0759F618F6E5AE003269F7 /* GeLoBeaconOTAConfigurationTests */,
+				AB0759CD18F6E5AE003269F7 /* Frameworks */,
+				AB0759CC18F6E5AE003269F7 /* Products */,
+				036CE64C2AB14D118E3C6499 /* Pods-GeLoBeaconOTAConfiguration.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		AB0759CC18F6E5AE003269F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB0759CB18F6E5AE003269F7 /* GeLoBeaconOTAConfiguration.app */,
+				AB0759EF18F6E5AE003269F7 /* GeLoBeaconOTAConfigurationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB0759CD18F6E5AE003269F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB7106C51909A2EB005832C9 /* libGeLoFirmwareLibrary-public.a */,
+				AB075ACD18F839D7003269F7 /* CoreBluetooth.framework */,
+				AB0759CE18F6E5AE003269F7 /* Foundation.framework */,
+				AB0759D018F6E5AE003269F7 /* CoreGraphics.framework */,
+				AB0759D218F6E5AE003269F7 /* UIKit.framework */,
+				AB0759F018F6E5AE003269F7 /* XCTest.framework */,
+				5C3F94F3F9EF432FBD9AC920 /* libPods-GeLoBeaconOTAConfiguration.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB0759D418F6E5AE003269F7 /* GeLoBeaconOTAConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				AB075AC918F83000003269F7 /* Categories */,
+				AB075AC518F82F1A003269F7 /* Controllers */,
+				AB0759DD18F6E5AE003269F7 /* GeLoAppDelegate.h */,
+				AB0759DE18F6E5AE003269F7 /* GeLoAppDelegate.m */,
+				AB0759E018F6E5AE003269F7 /* Main_iPhone.storyboard */,
+				AB0759E318F6E5AE003269F7 /* Main_iPad.storyboard */,
+				AB0759E918F6E5AE003269F7 /* Images.xcassets */,
+				AB5613491905A1F9002819B7 /* Protocols */,
+				AB0759D518F6E5AE003269F7 /* Supporting Files */,
+				AB56133818FF0C60002819B7 /* GeLoAlertHelper.h */,
+				AB56133918FF0C60002819B7 /* GeLoAlertHelper.m */,
+			);
+			path = GeLoBeaconOTAConfiguration;
+			sourceTree = "<group>";
+		};
+		AB0759D518F6E5AE003269F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB0759D618F6E5AE003269F7 /* GeLoBeaconOTAConfiguration-Info.plist */,
+				AB0759D718F6E5AE003269F7 /* InfoPlist.strings */,
+				AB0759DA18F6E5AE003269F7 /* main.m */,
+				AB0759DC18F6E5AE003269F7 /* GeLoBeaconOTAConfiguration-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB0759F618F6E5AE003269F7 /* GeLoBeaconOTAConfigurationTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB0759FC18F6E5AE003269F7 /* GeLoBeaconOTAConfigurationTests.m */,
+				AB0759F718F6E5AE003269F7 /* Supporting Files */,
+			);
+			path = GeLoBeaconOTAConfigurationTests;
+			sourceTree = "<group>";
+		};
+		AB0759F718F6E5AE003269F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB0759F818F6E5AE003269F7 /* GeLoBeaconOTAConfigurationTests-Info.plist */,
+				AB0759F918F6E5AE003269F7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB075AC518F82F1A003269F7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AB075AC618F82F1A003269F7 /* GeLoViewController.h */,
+				AB075AC718F82F1A003269F7 /* GeLoViewController.m */,
+				AB075ACF18F860CF003269F7 /* GeLoDevicePropertyListViewController.h */,
+				AB075AD018F860CF003269F7 /* GeLoDevicePropertyListViewController.m */,
+				AB56131E18FDC060002819B7 /* GeLoAdvIntervalViewController.h */,
+				AB56131F18FDC060002819B7 /* GeLoAdvIntervalViewController.m */,
+				AB56132118FDC430002819B7 /* GeLoAdvUUIDViewController.h */,
+				AB56132218FDC430002819B7 /* GeLoAdvUUIDViewController.m */,
+				AB56132418FDC43B002819B7 /* GeLoAdvMajorViewController.h */,
+				AB56132518FDC43B002819B7 /* GeLoAdvMajorViewController.m */,
+				AB56132718FDC444002819B7 /* GeLoAdvMinorViewController.h */,
+				AB56132818FDC444002819B7 /* GeLoAdvMinorViewController.m */,
+				AB56132A18FDC44F002819B7 /* GeLoPasscodeViewController.h */,
+				AB56132B18FDC44F002819B7 /* GeLoPasscodeViewController.m */,
+				AB56132D18FDC745002819B7 /* GeLoAdvChannelsViewController.h */,
+				AB56132E18FDC745002819B7 /* GeLoAdvChannelsViewController.m */,
+				AB56133018FDC752002819B7 /* GeLoAdvPowerViewController.h */,
+				AB56133118FDC752002819B7 /* GeLoAdvPowerViewController.m */,
+				AB56133318FDD811002819B7 /* GeLoPropertyViewController.h */,
+				AB56133418FDD811002819B7 /* GeLoPropertyViewController.m */,
+				AB56133B19016A2B002819B7 /* GeLoFactoryResetViewController.h */,
+				AB56133C19016A2B002819B7 /* GeLoFactoryResetViewController.m */,
+				AB561345190575B5002819B7 /* GeLoDeviceListViewController.h */,
+				AB561346190575B5002819B7 /* GeLoDeviceListViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AB075AC918F83000003269F7 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				AB56134A1905A899002819B7 /* UIViewController+Dismissal.h */,
+				AB56134B1905A899002819B7 /* UIViewController+Dismissal.m */,
+				AB075ACA18F83000003269F7 /* UIViewController+UserInfoDict.h */,
+				AB075ACB18F83000003269F7 /* UIViewController+UserInfoDict.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		AB5613491905A1F9002819B7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AB5613481905A1E1002819B7 /* GeLoDeviceListDelegate.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB0759CA18F6E5AE003269F7 /* GeLoBeaconOTAConfiguration */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB075A0018F6E5AE003269F7 /* Build configuration list for PBXNativeTarget "GeLoBeaconOTAConfiguration" */;
+			buildPhases = (
+				90F2BAC5A4AD456D971AE7A6 /* Check Pods Manifest.lock */,
+				AB0759C718F6E5AE003269F7 /* Sources */,
+				AB0759C818F6E5AE003269F7 /* Frameworks */,
+				AB0759C918F6E5AE003269F7 /* Resources */,
+				3877612F4C714ECF831BA5A5 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeLoBeaconOTAConfiguration;
+			productName = GeLoBeaconOTAConfiguration;
+			productReference = AB0759CB18F6E5AE003269F7 /* GeLoBeaconOTAConfiguration.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB0759EE18F6E5AE003269F7 /* GeLoBeaconOTAConfigurationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB075A0318F6E5AE003269F7 /* Build configuration list for PBXNativeTarget "GeLoBeaconOTAConfigurationTests" */;
+			buildPhases = (
+				AB0759EB18F6E5AE003269F7 /* Sources */,
+				AB0759EC18F6E5AE003269F7 /* Frameworks */,
+				AB0759ED18F6E5AE003269F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB0759F518F6E5AE003269F7 /* PBXTargetDependency */,
+			);
+			name = GeLoBeaconOTAConfigurationTests;
+			productName = GeLoBeaconOTAConfigurationTests;
+			productReference = AB0759EF18F6E5AE003269F7 /* GeLoBeaconOTAConfigurationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB0759C318F6E5AE003269F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GeLo;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = GeLo;
+				TargetAttributes = {
+					AB0759CA18F6E5AE003269F7 = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					AB0759EE18F6E5AE003269F7 = {
+						TestTargetID = AB0759CA18F6E5AE003269F7;
+					};
+				};
+			};
+			buildConfigurationList = AB0759C618F6E5AE003269F7 /* Build configuration list for PBXProject "GeLoBeaconOTAConfiguration" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB0759C218F6E5AE003269F7;
+			productRefGroup = AB0759CC18F6E5AE003269F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB0759CA18F6E5AE003269F7 /* GeLoBeaconOTAConfiguration */,
+				AB0759EE18F6E5AE003269F7 /* GeLoBeaconOTAConfigurationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB0759C918F6E5AE003269F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB0759E518F6E5AE003269F7 /* Main_iPad.storyboard in Resources */,
+				AB0759EA18F6E5AE003269F7 /* Images.xcassets in Resources */,
+				AB0759E218F6E5AE003269F7 /* Main_iPhone.storyboard in Resources */,
+				AB0759D918F6E5AE003269F7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB0759ED18F6E5AE003269F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB0759FB18F6E5AE003269F7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3877612F4C714ECF831BA5A5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-GeLoBeaconOTAConfiguration-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90F2BAC5A4AD456D971AE7A6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB0759C718F6E5AE003269F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB56133218FDC752002819B7 /* GeLoAdvPowerViewController.m in Sources */,
+				AB56132618FDC43B002819B7 /* GeLoAdvMajorViewController.m in Sources */,
+				AB0759DB18F6E5AE003269F7 /* main.m in Sources */,
+				AB56134C1905A899002819B7 /* UIViewController+Dismissal.m in Sources */,
+				AB56132018FDC060002819B7 /* GeLoAdvIntervalViewController.m in Sources */,
+				AB56132C18FDC44F002819B7 /* GeLoPasscodeViewController.m in Sources */,
+				AB56132918FDC444002819B7 /* GeLoAdvMinorViewController.m in Sources */,
+				AB075ACC18F83000003269F7 /* UIViewController+UserInfoDict.m in Sources */,
+				AB56133A18FF0C60002819B7 /* GeLoAlertHelper.m in Sources */,
+				AB075AC818F82F1A003269F7 /* GeLoViewController.m in Sources */,
+				AB56132F18FDC745002819B7 /* GeLoAdvChannelsViewController.m in Sources */,
+				AB56133D19016A2B002819B7 /* GeLoFactoryResetViewController.m in Sources */,
+				AB561347190575B5002819B7 /* GeLoDeviceListViewController.m in Sources */,
+				AB075AD118F860CF003269F7 /* GeLoDevicePropertyListViewController.m in Sources */,
+				AB0759DF18F6E5AE003269F7 /* GeLoAppDelegate.m in Sources */,
+				AB56133518FDD811002819B7 /* GeLoPropertyViewController.m in Sources */,
+				AB56132318FDC430002819B7 /* GeLoAdvUUIDViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB0759EB18F6E5AE003269F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB0759FD18F6E5AE003269F7 /* GeLoBeaconOTAConfigurationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB0759F518F6E5AE003269F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB0759CA18F6E5AE003269F7 /* GeLoBeaconOTAConfiguration */;
+			targetProxy = AB0759F418F6E5AE003269F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AB0759D718F6E5AE003269F7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB0759D818F6E5AE003269F7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AB0759E018F6E5AE003269F7 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB0759E118F6E5AE003269F7 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		AB0759E318F6E5AE003269F7 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB0759E418F6E5AE003269F7 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		AB0759F918F6E5AE003269F7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB0759FA18F6E5AE003269F7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB0759FE18F6E5AE003269F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AB0759FF18F6E5AE003269F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB075A0118F6E5AE003269F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 036CE64C2AB14D118E3C6499 /* Pods-GeLoBeaconOTAConfiguration.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GeLoBeaconOTAConfiguration/GeLoBeaconOTAConfiguration-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/Block-KVO\"",
+					"\"${PODS_ROOT}/Headers/UIImage+RTTint\"",
+					"$(inherited)",
+					"$(SRCROOT)/$(PROJECT_NAME)/Vendor/include",
+				);
+				INFOPLIST_FILE = "GeLoBeaconOTAConfiguration/GeLoBeaconOTAConfiguration-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GeLoFirmwareUpdater-ddfjmlyubycbmbbvmoescpswdzqo/Build/Products/Debug-iphoneos",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/GeLoBeaconOTAConfiguration/lib",
+				);
+				OTHER_LDFLAGS = "-all_load ";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AB075A0218F6E5AE003269F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 036CE64C2AB14D118E3C6499 /* Pods-GeLoBeaconOTAConfiguration.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GeLoBeaconOTAConfiguration/GeLoBeaconOTAConfiguration-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/Block-KVO\"",
+					"\"${PODS_ROOT}/Headers/UIImage+RTTint\"",
+					"$(inherited)",
+					"$(SRCROOT)/$(PROJECT_NAME)/Vendor/include",
+				);
+				INFOPLIST_FILE = "GeLoBeaconOTAConfiguration/GeLoBeaconOTAConfiguration-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GeLoFirmwareUpdater-ddfjmlyubycbmbbvmoescpswdzqo/Build/Products/Debug-iphoneos",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/GeLoBeaconOTAConfiguration/lib",
+				);
+				OTHER_LDFLAGS = "-all_load ";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AB075A0418F6E5AE003269F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GeLoBeaconOTAConfiguration.app/GeLoBeaconOTAConfiguration";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GeLoBeaconOTAConfiguration/GeLoBeaconOTAConfiguration-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GeLoBeaconOTAConfigurationTests/GeLoBeaconOTAConfigurationTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AB075A0518F6E5AE003269F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GeLoBeaconOTAConfiguration.app/GeLoBeaconOTAConfiguration";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GeLoBeaconOTAConfiguration/GeLoBeaconOTAConfiguration-Prefix.pch";
+				INFOPLIST_FILE = "GeLoBeaconOTAConfigurationTests/GeLoBeaconOTAConfigurationTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB0759C618F6E5AE003269F7 /* Build configuration list for PBXProject "GeLoBeaconOTAConfiguration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB0759FE18F6E5AE003269F7 /* Debug */,
+				AB0759FF18F6E5AE003269F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB075A0018F6E5AE003269F7 /* Build configuration list for PBXNativeTarget "GeLoBeaconOTAConfiguration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB075A0118F6E5AE003269F7 /* Debug */,
+				AB075A0218F6E5AE003269F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB075A0318F6E5AE003269F7 /* Build configuration list for PBXNativeTarget "GeLoBeaconOTAConfigurationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB075A0418F6E5AE003269F7 /* Debug */,
+				AB075A0518F6E5AE003269F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB0759C318F6E5AE003269F7 /* Project object */;
+}
