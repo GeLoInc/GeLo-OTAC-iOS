@@ -37,7 +37,8 @@
 		AB56133D19016A2B002819B7 /* GeLoFactoryResetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB56133C19016A2B002819B7 /* GeLoFactoryResetViewController.m */; };
 		AB561347190575B5002819B7 /* GeLoDeviceListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB561346190575B5002819B7 /* GeLoDeviceListViewController.m */; };
 		AB56134C1905A899002819B7 /* UIViewController+Dismissal.m in Sources */ = {isa = PBXBuildFile; fileRef = AB56134B1905A899002819B7 /* UIViewController+Dismissal.m */; };
-		AB5613E31906F865002819B7 /* libGeLoFirmwareLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5613E21906F865002819B7 /* libGeLoFirmwareLibrary.a */; };
+		AB7106C41909A15C005832C9 /* libGeLoFirmwareLibrary-public.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7106C31909A15C005832C9 /* libGeLoFirmwareLibrary-public.a */; };
+		AF66EB9D6D4A45E0B629ADCE /* libPods-GeLoBeaconCustomerConfigurator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C3F94F3F9EF432FBD9AC920 /* libPods-GeLoBeaconCustomerConfigurator.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		036CE64C2AB14D118E3C6499 /* Pods-GeLoBeaconCustomerConfigurator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeLoBeaconCustomerConfigurator.xcconfig"; path = "Pods/Pods-GeLoBeaconCustomerConfigurator.xcconfig"; sourceTree = "<group>"; };
 		5C3F94F3F9EF432FBD9AC920 /* libPods-GeLoBeaconCustomerConfigurator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GeLoBeaconCustomerConfigurator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB0759CB18F6E5AE003269F7 /* GeLoBeaconCustomerConfigurator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeLoBeaconCustomerConfigurator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB0759CE18F6E5AE003269F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -102,7 +104,7 @@
 		AB5613481905A1E1002819B7 /* GeLoDeviceListDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GeLoDeviceListDelegate.h; path = Protocols/GeLoDeviceListDelegate.h; sourceTree = "<group>"; };
 		AB56134A1905A899002819B7 /* UIViewController+Dismissal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Dismissal.h"; sourceTree = "<group>"; };
 		AB56134B1905A899002819B7 /* UIViewController+Dismissal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Dismissal.m"; sourceTree = "<group>"; };
-		AB5613E21906F865002819B7 /* libGeLoFirmwareLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGeLoFirmwareLibrary.a; path = "../../../../../Library/Developer/Xcode/DerivedData/GeLoFirmwareUpdater-ddfjmlyubycbmbbvmoescpswdzqo/Build/Products/Debug-iphoneos/libGeLoFirmwareLibrary.a"; sourceTree = "<group>"; };
+		AB7106C31909A15C005832C9 /* libGeLoFirmwareLibrary-public.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libGeLoFirmwareLibrary-public.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,11 +112,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB5613E31906F865002819B7 /* libGeLoFirmwareLibrary.a in Frameworks */,
+				AB7106C41909A15C005832C9 /* libGeLoFirmwareLibrary-public.a in Frameworks */,
 				AB075ACE18F839D7003269F7 /* CoreBluetooth.framework in Frameworks */,
 				AB0759D118F6E5AE003269F7 /* CoreGraphics.framework in Frameworks */,
 				AB0759D318F6E5AE003269F7 /* UIKit.framework in Frameworks */,
 				AB0759CF18F6E5AE003269F7 /* Foundation.framework in Frameworks */,
+				AF66EB9D6D4A45E0B629ADCE /* libPods-GeLoBeaconCustomerConfigurator.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +141,7 @@
 				AB0759F618F6E5AE003269F7 /* GeLoBeaconCustomerConfiguratorTests */,
 				AB0759CD18F6E5AE003269F7 /* Frameworks */,
 				AB0759CC18F6E5AE003269F7 /* Products */,
+				036CE64C2AB14D118E3C6499 /* Pods-GeLoBeaconCustomerConfigurator.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,7 +157,7 @@
 		AB0759CD18F6E5AE003269F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AB5613E21906F865002819B7 /* libGeLoFirmwareLibrary.a */,
+				AB7106C31909A15C005832C9 /* libGeLoFirmwareLibrary-public.a */,
 				AB075ACD18F839D7003269F7 /* CoreBluetooth.framework */,
 				AB0759CE18F6E5AE003269F7 /* Foundation.framework */,
 				AB0759D018F6E5AE003269F7 /* CoreGraphics.framework */,
@@ -268,9 +272,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB075A0018F6E5AE003269F7 /* Build configuration list for PBXNativeTarget "GeLoBeaconCustomerConfigurator" */;
 			buildPhases = (
+				90F2BAC5A4AD456D971AE7A6 /* Check Pods Manifest.lock */,
 				AB0759C718F6E5AE003269F7 /* Sources */,
 				AB0759C818F6E5AE003269F7 /* Frameworks */,
 				AB0759C918F6E5AE003269F7 /* Resources */,
+				3877612F4C714ECF831BA5A5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -361,6 +367,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3877612F4C714ECF831BA5A5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-GeLoBeaconCustomerConfigurator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90F2BAC5A4AD456D971AE7A6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AB0759C718F6E5AE003269F7 /* Sources */ = {
@@ -515,6 +554,7 @@
 		};
 		AB075A0118F6E5AE003269F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 036CE64C2AB14D118E3C6499 /* Pods-GeLoBeaconCustomerConfigurator.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -525,12 +565,13 @@
 					"\"${PODS_ROOT}/Headers/Block-KVO\"",
 					"\"${PODS_ROOT}/Headers/UIImage+RTTint\"",
 					"$(inherited)",
-					"$(SRCROOT)/../Vendor",
+					"$(SRCROOT)/$(PROJECT_NAME)/Vendor/include",
 				);
 				INFOPLIST_FILE = "GeLoBeaconCustomerConfigurator/GeLoBeaconCustomerConfigurator-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GeLoFirmwareUpdater-ddfjmlyubycbmbbvmoescpswdzqo/Build/Products/Debug-iphoneos",
+					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = "-all_load ";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -541,6 +582,7 @@
 		};
 		AB075A0218F6E5AE003269F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 036CE64C2AB14D118E3C6499 /* Pods-GeLoBeaconCustomerConfigurator.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -551,12 +593,13 @@
 					"\"${PODS_ROOT}/Headers/Block-KVO\"",
 					"\"${PODS_ROOT}/Headers/UIImage+RTTint\"",
 					"$(inherited)",
-					"$(SRCROOT)/../Vendor",
+					"$(SRCROOT)/$(PROJECT_NAME)/Vendor/include",
 				);
 				INFOPLIST_FILE = "GeLoBeaconCustomerConfigurator/GeLoBeaconCustomerConfigurator-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GeLoFirmwareUpdater-ddfjmlyubycbmbbvmoescpswdzqo/Build/Products/Debug-iphoneos",
+					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = "-all_load ";
 				PRODUCT_NAME = "$(TARGET_NAME)";
