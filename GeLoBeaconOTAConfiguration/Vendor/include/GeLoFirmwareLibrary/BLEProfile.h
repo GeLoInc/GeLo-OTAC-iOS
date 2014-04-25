@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
+#import "BLEUtility.h"
 
 @interface BLEProfile : NSObject
 
@@ -34,6 +35,10 @@
 // will call refreshBlock if set to request that the profile be refreshed from the
 // device, otherwise no-op.
 - (void) refresh;
+
+// is called before a refresh happens, override in the subclass
+// to do any cleanup before the profile is refreshed from the device
+- (void) willRefresh;
 
 // no-op by default, override in subclass. Called when
 // the profile received a write response from a characteristic

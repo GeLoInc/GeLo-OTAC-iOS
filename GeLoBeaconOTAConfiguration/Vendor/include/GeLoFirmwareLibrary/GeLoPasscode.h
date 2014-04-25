@@ -12,7 +12,7 @@
 @interface GeLoPasscode : NSObject
 
 + (NSString *)geLoPasscodeString:(NSUInteger)serialNumber;
-+ (NSString *) customerPasscodeString:(NSUInteger)serialNumber;
++ (NSString *)customerPasscodeString:(NSUInteger)serialNumber;
 
 - (id) initWithSeed:(NSUInteger)major serialNumber:(NSUInteger)serialNumber secret:(NSUInteger)secret;
 

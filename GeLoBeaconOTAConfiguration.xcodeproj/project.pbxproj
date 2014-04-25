@@ -37,7 +37,7 @@
 		AB56133D19016A2B002819B7 /* GeLoFactoryResetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB56133C19016A2B002819B7 /* GeLoFactoryResetViewController.m */; };
 		AB561347190575B5002819B7 /* GeLoDeviceListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB561346190575B5002819B7 /* GeLoDeviceListViewController.m */; };
 		AB56134C1905A899002819B7 /* UIViewController+Dismissal.m in Sources */ = {isa = PBXBuildFile; fileRef = AB56134B1905A899002819B7 /* UIViewController+Dismissal.m */; };
-		AB7106C61909A2EB005832C9 /* libGeLoFirmwareLibrary-public.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7106C51909A2EB005832C9 /* libGeLoFirmwareLibrary-public.a */; };
+		ABD59F31191152840091AFBD /* libGeLoFirmwareLibrary-public.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD59F30191152840091AFBD /* libGeLoFirmwareLibrary-public.a */; };
 		AF66EB9D6D4A45E0B629ADCE /* libPods-GeLoBeaconOTAConfiguration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C3F94F3F9EF432FBD9AC920 /* libPods-GeLoBeaconOTAConfiguration.a */; };
 /* End PBXBuildFile section */
 
@@ -104,7 +104,7 @@
 		AB5613481905A1E1002819B7 /* GeLoDeviceListDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GeLoDeviceListDelegate.h; path = Protocols/GeLoDeviceListDelegate.h; sourceTree = "<group>"; };
 		AB56134A1905A899002819B7 /* UIViewController+Dismissal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Dismissal.h"; sourceTree = "<group>"; };
 		AB56134B1905A899002819B7 /* UIViewController+Dismissal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Dismissal.m"; sourceTree = "<group>"; };
-		AB7106C51909A2EB005832C9 /* libGeLoFirmwareLibrary-public.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libGeLoFirmwareLibrary-public.a"; path = "GeLoBeaconOTAConfiguration/lib/libGeLoFirmwareLibrary-public.a"; sourceTree = "<group>"; };
+		ABD59F30191152840091AFBD /* libGeLoFirmwareLibrary-public.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libGeLoFirmwareLibrary-public.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB7106C61909A2EB005832C9 /* libGeLoFirmwareLibrary-public.a in Frameworks */,
+				ABD59F31191152840091AFBD /* libGeLoFirmwareLibrary-public.a in Frameworks */,
 				AB075ACE18F839D7003269F7 /* CoreBluetooth.framework in Frameworks */,
 				AB0759D118F6E5AE003269F7 /* CoreGraphics.framework in Frameworks */,
 				AB0759D318F6E5AE003269F7 /* UIKit.framework in Frameworks */,
@@ -157,7 +157,7 @@
 		AB0759CD18F6E5AE003269F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AB7106C51909A2EB005832C9 /* libGeLoFirmwareLibrary-public.a */,
+				ABD59F30191152840091AFBD /* libGeLoFirmwareLibrary-public.a */,
 				AB075ACD18F839D7003269F7 /* CoreBluetooth.framework */,
 				AB0759CE18F6E5AE003269F7 /* Foundation.framework */,
 				AB0759D018F6E5AE003269F7 /* CoreGraphics.framework */,
