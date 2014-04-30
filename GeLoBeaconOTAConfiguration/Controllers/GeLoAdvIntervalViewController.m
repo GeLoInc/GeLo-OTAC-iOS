@@ -38,7 +38,11 @@
 }
 
 - (IBAction)save:(id)sender{
-    NSNumber *n = [self.numberFormatter numberFromString:self.advIntervalTextField.text];
+    // Strip out separators in case for ease of editing a user left in a comma.
+    // This prevents the number formatter from incorrectly producing 0 in
+    // the case of 1,00 which should be interprted as 100.
+    NSString *cleanedAdvInterval = [self.advIntervalTextField.text stringByReplacingOccurrencesOfString:self.numberFormatter.groupingSeparator withString:@""];
+    NSNumber *n = [self.numberFormatter numberFromString:cleanedAdvInterval];
     self.device.advertisingIntervalInMilliseconds = n;
     [super save:sender];    
 }
