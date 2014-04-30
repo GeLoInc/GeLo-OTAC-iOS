@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "GeLoPropertyViewController.h"
 
+/*
+ * GeLoAdvChannelsViewController is the view controller that
+ * represents showing/editing the device's advertising channels.
+ */
 @interface GeLoAdvChannelsViewController : GeLoPropertyViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;

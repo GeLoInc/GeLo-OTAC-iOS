@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "GeLoDeviceListDelegate.h"
 
+/* 
+ * GeLoViewController is the first view controller displayed in the application.
+ */
 @interface GeLoViewController : UIViewController<GeLoDeviceListDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *instructionsLabel;

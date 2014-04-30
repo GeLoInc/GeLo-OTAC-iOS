@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "GeLoPropertyViewController.h"
 
+/*
+ * GeLoAdvPowerViewController is the view controller that
+ * represents showing/editing the device's advertising power.
+ */
 @interface GeLoAdvPowerViewController : GeLoPropertyViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;

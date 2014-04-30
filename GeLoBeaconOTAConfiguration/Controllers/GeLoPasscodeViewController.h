@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "GeLoPropertyViewController.h"
 
+/*
+ * GeLoPasscodeViewController is the view controller that
+ * represents showing/editing the passcode for the device.
+ */
 @interface GeLoPasscodeViewController : GeLoPropertyViewController
 @property (weak, nonatomic) IBOutlet UITextField *passcodeTextField;
 @end

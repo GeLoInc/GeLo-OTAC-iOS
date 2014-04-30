@@ -9,7 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "GeLoPropertyViewController.h"
 
-@interface GeLoFactoryResetViewController : GeLoPropertyViewController<UIAlertViewDelegate>
+/*
+ * GeLoFactoryResetViewController is the view controller that
+ * allows the user to factory reset the connected GeLo device.
+ */
+ @interface GeLoFactoryResetViewController : GeLoPropertyViewController<UIAlertViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *resetBeaconButton;
 

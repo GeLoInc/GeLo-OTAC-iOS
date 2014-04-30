@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "GeLoPropertyViewController.h"
 
+/*
+ * GeLoAdvMajorViewController is the view controller that
+ * represents showing/editing the ibeacon major property.
+ */
 @interface GeLoAdvMajorViewController : GeLoPropertyViewController
 
 @property (weak, nonatomic) IBOutlet UITextField *majorTextField;

@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+/* 
+ * GeLoDevicePropertyListViewController is shown when a user has connected
+ * to a device and they are viewing all properties on that device.
+ */
 @interface GeLoDevicePropertyListViewController : UITableViewController
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *doneButton;

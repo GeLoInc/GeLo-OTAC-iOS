@@ -10,6 +10,11 @@
 #import "GeLoDeviceListDelegate.h"
 #import "GeLoFirmwareLibrary/GeLoDevice.h"
 
+/*
+ * GeLoDeviceListViewController is the view controller that lists
+ * multiple devices found. It is usually not shown as the most common
+ * flow for configuring beacons is to configure one at a time.
+ */
 @interface GeLoDeviceListViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;

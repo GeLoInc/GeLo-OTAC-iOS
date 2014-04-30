@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "GeLoPropertyViewController.h"
 
+/*
+ * GeLoAdvIntervalViewController is the view controller that
+ * represents showing/editing the advertising interval property.
+ */
 @interface GeLoAdvIntervalViewController : GeLoPropertyViewController
 
 @property (weak, nonatomic) IBOutlet UITextField *advIntervalTextField;

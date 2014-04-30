@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "GeLoPropertyViewController.h"
 
+/*
+ * GeLoAdvUUIDViewController is the view controller that
+ * represents showing/editing the advertising UUID property.
+ */
 @interface GeLoAdvUUIDViewController : GeLoPropertyViewController
 
 @property (weak, nonatomic) IBOutlet UITextField *uuidTextField;

@@ -8,8 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+/* 
+ * UIViewController+Dismissal adds method(s) to UIViewController
+ * to allow it be dismissed regardless of if its a modal
+ * window or not.
+ */
 @interface UIViewController (Dismissal)
 
+/*
+ * Pops current view controller from the stack regardless of if its modal or not.
+ */
 - (void)dismiss;
 
 @end

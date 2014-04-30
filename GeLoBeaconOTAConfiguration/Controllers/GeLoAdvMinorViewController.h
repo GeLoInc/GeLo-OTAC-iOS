@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "GeLoPropertyViewController.h"
 
+/*
+ * GeLoAdvMinorViewController is the view controller that
+ * represents showing/editing the ibeacon minor property.
+ */
 @interface GeLoAdvMinorViewController : GeLoPropertyViewController
 @property (weak, nonatomic) IBOutlet UITextField *minorTextField;
 @end

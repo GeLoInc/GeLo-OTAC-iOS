@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+/*
+ * GeLoAlertHelper is a helper class for displaying common alert messages to the
+ * user.
+ */
 @interface GeLoAlertHelper : NSObject
 
 + (void)showError:(NSString *)msg withTitle:(NSString *)title andUIControl: (UIControl *) control;
