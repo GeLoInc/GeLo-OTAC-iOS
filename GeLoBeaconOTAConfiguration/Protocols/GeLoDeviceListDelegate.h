@@ -16,7 +16,15 @@
  */
 @protocol GeLoDeviceListDelegate <NSObject>
 
+/* 
+ * This is called when the device list was canceled.
+ */
 - (void)deviceListDidCancelSelection;
+
+/* 
+ * This is called when a device in the device list has been selected. It is
+ * passed the selected device.
+ */
 - (void)deviceListDidSelectDevice:(GeLoDevice *)device;
 
 @end

@@ -20,7 +20,18 @@
 @interface GeLoPropertyViewController : UIViewController<UITextFieldDelegate, UIAlertViewDelegate>
 @property (weak,readonly) GeLoDevice *device;
 
+/*
+ * Save always dismisses the current property view controller. Should be overridden
+ * by every subclass and called via [super save] when the subclass has finished
+ * it's saving action.
+ */
 - (IBAction)save:(id)sender;
+
+/*
+ * Cancel always dismisses the current property view controller. Should be overridden
+ * by a subclass for cancel-specific beahvior and called via [super cancel] when
+ * the subclass is done canceling. Otherwise, don't override. 
+ */
 - (IBAction)cancel:(id)sender;
 
 @end

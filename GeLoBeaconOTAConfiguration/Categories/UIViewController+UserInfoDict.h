@@ -17,7 +17,16 @@
  */
 @interface UIViewController (UserInfoDict)
 
+/*
+ * Returns a NSDictionary represent any user information related to
+ * the view controller. If none has been set an empty dictionary will be
+ * returned.
+ */
 - (NSDictionary *) userInfoDict;
+
+/*
+ * Sets the user information related to this view controller.
+ */
 - (void) setUserInfoDict: (NSDictionary *) dict;
 
 @end

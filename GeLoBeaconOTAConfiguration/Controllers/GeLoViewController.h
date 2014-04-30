@@ -20,5 +20,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *statusLabel;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *scanButton;
 
+/*
+ * Starts scanning for GeLo beacons.
+ */
 - (IBAction)scan:(id)sender;
 @end

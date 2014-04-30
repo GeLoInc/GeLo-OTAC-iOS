@@ -17,6 +17,10 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *resetBeaconButton;
 
+/*
+ * Ask the user to perform a factory reset on the beacon and then perform it
+ * if they proceed with it.
+ */
 - (IBAction)resetBeacon:(id)sender;
 
 @end

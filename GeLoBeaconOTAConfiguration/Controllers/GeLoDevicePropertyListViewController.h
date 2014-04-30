@@ -16,6 +16,10 @@
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *doneButton;
 
+/*
+ * Returns the user to the previous view asking the device to restart
+ * in the process and disconnecting from the device.
+ */
 - (IBAction)done:(id)sender;
 
 @end

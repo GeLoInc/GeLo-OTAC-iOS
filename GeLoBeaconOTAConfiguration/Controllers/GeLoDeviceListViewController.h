@@ -21,6 +21,9 @@
 @property (weak, nonatomic) IBOutlet UINavigationBar *navigationBar;
 @property (strong, nonatomic)id<GeLoDeviceListDelegate> delegate;
 
+/*
+ * Cancels viewing the device list and dismisses this view controller.
+ */
 - (IBAction)cancel:(id)sender;
 
 @end

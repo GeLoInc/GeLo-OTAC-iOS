@@ -14,6 +14,10 @@
  */
 @interface GeLoAlertHelper : NSObject
 
+/* 
+ * Displays a UIAlert for the given error message, title, and UIControl. Always
+ * uses an "OK" cancel button. There is no way to determine what button was selected.
+ */
 + (void)showError:(NSString *)msg withTitle:(NSString *)title andUIControl: (UIControl *) control;
 
 @end
