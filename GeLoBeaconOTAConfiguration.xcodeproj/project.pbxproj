@@ -14,7 +14,6 @@
 		AB0759DB18F6E5AE003269F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0759DA18F6E5AE003269F7 /* main.m */; };
 		AB0759DF18F6E5AE003269F7 /* GeLoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0759DE18F6E5AE003269F7 /* GeLoAppDelegate.m */; };
 		AB0759E218F6E5AE003269F7 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB0759E018F6E5AE003269F7 /* Main_iPhone.storyboard */; };
-		AB0759E518F6E5AE003269F7 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB0759E318F6E5AE003269F7 /* Main_iPad.storyboard */; };
 		AB0759EA18F6E5AE003269F7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB0759E918F6E5AE003269F7 /* Images.xcassets */; };
 		AB0759F118F6E5AE003269F7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0759F018F6E5AE003269F7 /* XCTest.framework */; };
 		AB0759F218F6E5AE003269F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0759CE18F6E5AE003269F7 /* Foundation.framework */; };
@@ -66,7 +65,6 @@
 		AB0759DD18F6E5AE003269F7 /* GeLoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeLoAppDelegate.h; sourceTree = "<group>"; };
 		AB0759DE18F6E5AE003269F7 /* GeLoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeLoAppDelegate.m; sourceTree = "<group>"; };
 		AB0759E118F6E5AE003269F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		AB0759E418F6E5AE003269F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		AB0759E918F6E5AE003269F7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AB0759EF18F6E5AE003269F7 /* GeLoBeaconOTAConfigurationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeLoBeaconOTAConfigurationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB0759F018F6E5AE003269F7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -179,7 +177,6 @@
 				AB0759DD18F6E5AE003269F7 /* GeLoAppDelegate.h */,
 				AB0759DE18F6E5AE003269F7 /* GeLoAppDelegate.m */,
 				AB0759E018F6E5AE003269F7 /* Main_iPhone.storyboard */,
-				AB0759E318F6E5AE003269F7 /* Main_iPad.storyboard */,
 				AB0759E918F6E5AE003269F7 /* Images.xcassets */,
 				AB5613491905A1F9002819B7 /* Protocols */,
 				AB0759D518F6E5AE003269F7 /* Supporting Files */,
@@ -354,7 +351,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB0759E518F6E5AE003269F7 /* Main_iPad.storyboard in Resources */,
 				AB50D3AB1911650400517A60 /* lib in Resources */,
 				AB0759EA18F6E5AE003269F7 /* Images.xcassets in Resources */,
 				AB0759E218F6E5AE003269F7 /* Main_iPhone.storyboard in Resources */,
@@ -463,14 +459,6 @@
 				AB0759E118F6E5AE003269F7 /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		AB0759E318F6E5AE003269F7 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AB0759E418F6E5AE003269F7 /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		AB0759F918F6E5AE003269F7 /* InfoPlist.strings */ = {
