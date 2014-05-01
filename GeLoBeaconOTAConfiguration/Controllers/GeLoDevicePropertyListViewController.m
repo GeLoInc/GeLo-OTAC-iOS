@@ -75,6 +75,8 @@
     self.deviceService = [self.userInfoDict objectForKey: @"DeviceService"];
     self.device = [self.userInfoDict objectForKey: @"Device"];
 
+    self.doneButton.title = @"Done";
+
     NSArray *keypaths = @[
         @keypath(self.device.advertisingIntervalLoaded),
         @keypath(self.device.advertisingChannelMapLoaded),
@@ -209,27 +211,14 @@
     return cell;
 }
 
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 - (IBAction)done:(id)sender {
+    self.doneButton.title = @"Restarting";    
+    self.doneButton.enabled = false;
+    __weak UIViewController *weakSelf = self;
     if(self.deviceService){
-        [self.deviceService restartDevice];
+        [self.deviceService restartDevice:^{
+            [weakSelf.navigationController popViewControllerAnimated:YES];
+        }];
     }
-
-    [NSTimer scheduledTimerWithTimeInterval:0.25 target:self selector:@selector(unwindView:) userInfo:nil repeats:NO];
-}
-
-- (void)unwindView:(NSTimer *)timer {
-    [self.navigationController popViewControllerAnimated:YES];
 }
 @end

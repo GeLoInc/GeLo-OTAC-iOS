@@ -25,7 +25,7 @@
 - (void) connect;
 - (void) connected;
 - (void) disconnect;
-- (void) restartDevice;
+- (void) restartDevice: (void(^)(void))onRestartComplete;
 
 - (void) addAuthenticationProfile:(GeLoAuthenticationProfile *)authProfile;
 - (void) addProfile: (BLEProfile *) profile;
