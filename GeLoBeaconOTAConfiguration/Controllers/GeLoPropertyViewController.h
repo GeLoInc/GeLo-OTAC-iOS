@@ -17,7 +17,7 @@
  * although specifics should be implemented by the subclass with super called
  * appropriately.
  */
-@interface GeLoPropertyViewController : UIViewController<UITextFieldDelegate, UIAlertViewDelegate>
+@interface GeLoPropertyViewController : UIViewController
 @property (weak,readonly) GeLoDevice *device;
 
 /*

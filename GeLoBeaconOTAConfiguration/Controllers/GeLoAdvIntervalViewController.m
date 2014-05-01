@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad
 {
+    [super viewDidLoad];
     self.numberFormatter = [[NSNumberFormatter alloc] init];
     self.numberFormatter.numberStyle = NSNumberFormatterDecimalStyle;
     self.numberFormatter.maximumFractionDigits = 2;
@@ -50,31 +51,5 @@
 - (UIView *)inputAccessoryView {
     return nil;
 }
-
-// Called when the UIKeyboardDidShowNotification is sent.
-- (void)keyboardWasShown:(NSNotification*)aNotification {
-}
-
-// Called when the UIKeyboardWillHideNotification is sent    
-- (void)keyboardWillBeHidden:(NSNotification*)aNotification {
-}
-
-#pragma mark UIAlertViewDelegate
-
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-}
-
-
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

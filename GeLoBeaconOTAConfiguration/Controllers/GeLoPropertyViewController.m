@@ -18,17 +18,6 @@
 {
     [super viewWillAppear:animated];
     self.device = [self.userInfoDict objectForKey:@"Device"];
-
-    [self registerForKeyboardNotifications];
-}
-
-- (void)registerForKeyboardNotifications {
-    [[NSNotificationCenter defaultCenter] addObserver:self
-            selector:@selector(keyboardWasShown:)
-            name:UIKeyboardDidShowNotification object:nil];
-   [[NSNotificationCenter defaultCenter] addObserver:self
-             selector:@selector(keyboardWillBeHidden:)
-             name:UIKeyboardWillHideNotification object:nil];
 }
 
 // Override in a subclass, call this after you have successfully saved.
@@ -40,16 +29,5 @@
 - (IBAction)cancel:(id)sender{
     [self dismiss];
 }
-
-#pragma mark UITextFieldDelegate
-
-// Called when the UIKeyboardDidShowNotification is sent.
-- (void)keyboardWasShown:(NSNotification*)aNotification {
-}
-
-// Called when the UIKeyboardWillHideNotification is sent    
-- (void)keyboardWillBeHidden:(NSNotification*)aNotification {
-}
-
 
 @end

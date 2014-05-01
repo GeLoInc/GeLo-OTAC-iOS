@@ -13,7 +13,7 @@
  * GeLoAdvUUIDViewController is the view controller that
  * represents showing/editing the advertising UUID property.
  */
-@interface GeLoAdvUUIDViewController : GeLoPropertyViewController
+@interface GeLoAdvUUIDViewController : GeLoPropertyViewController<UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *uuidTextField;
 
