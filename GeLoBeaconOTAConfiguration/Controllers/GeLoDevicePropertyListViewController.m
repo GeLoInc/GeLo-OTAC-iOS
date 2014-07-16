@@ -23,7 +23,8 @@
 #define kBeaconPropertyAdvMinorIndex    (4)
 #define kBeaconPropertyAdvPowerIndex    (5)
 #define kBeaconPropertyPasscodeIndex    (6)
-#define kBeaconFactoryResetIndex        (7)
+#define kBeaconPropertyConnectableIndex (7)
+#define kBeaconFactoryResetIndex        (8)
 
 #define kBeaconPropertyAdvInterval "Adv. Interval"
 #define kBeaconPropertyAdvChannels "Adv. Channels"
@@ -33,6 +34,7 @@
 #define kBeaconPropertyAdvPower    "Power"
 #define kBeaconPropertyPasscode    "Passcode"
 #define kBeaconFactoryReset        "Factory Reset"
+#define kBeaconPropertyConnectable "Connectable"
 
 
 
@@ -60,6 +62,7 @@
         @kBeaconPropertyAdvMinor,
         @kBeaconPropertyAdvPower,
         @kBeaconPropertyPasscode,
+		@kBeaconPropertyConnectable,
         @kBeaconFactoryReset
     ];
 
@@ -84,7 +87,8 @@
         @keypath(self.device.advertisingMajorLoaded),
         @keypath(self.device.advertisingMinorLoaded),
         @keypath(self.device.advertisingTransmitPowerLoaded),
-        @keypath(self.device.advertisingPasscodeLoaded)
+        @keypath(self.device.advertisingPasscodeLoaded),
+		@keypath(self.device.advertisingConnectableLoaded)
     ];
     [self observeProperties:keypaths withBlock:^(__weak GeLoDevicePropertyListViewController *self, NSString *keyPath, id old, id new) {
         [[self tableView] reloadData];
@@ -151,7 +155,10 @@
     } else if([property isEqualToString: @kBeaconPropertyPasscode]){
         [self performSegueWithIdentifier:@"pushEditPasscode" sender:self];
         
-    } else if([property isEqualToString: @kBeaconFactoryReset]){
+    } else if([property isEqualToString: @kBeaconPropertyConnectable]){
+		[self performSegueWithIdentifier:@"pushEditConnectable" sender:self];
+
+	} else if([property isEqualToString: @kBeaconFactoryReset]){
         [self performSegueWithIdentifier:@"pushFactoryReset" sender:self];
     }
 }
@@ -200,8 +207,13 @@
                 subtitle = @"";
             }
             break; }
+		case(kBeaconPropertyConnectableIndex): {
+			if (self.device.advertisingConnectableLoaded) {
+				subtitle = self.device.advertisingConnectableString;
+			}
+			break; }
         case(kBeaconFactoryResetIndex): {
-            subtitle = @"";
+				subtitle = @"";
             break; }
     }
 
@@ -221,4 +233,5 @@
         }];
     }
 }
+
 @end

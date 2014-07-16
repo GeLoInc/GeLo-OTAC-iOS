@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54315286198046F800778383 /* libGeLoFirmwareLibrary-public.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54315285198046F800778383 /* libGeLoFirmwareLibrary-public.a */; };
 		54C8615D1975AAB7002D13E4 /* GeLoConnectableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C8615C1975AAB7002D13E4 /* GeLoConnectableViewController.m */; };
-		54C861691975CB0C002D13E4 /* libGeLoFirmwareLibrary-public.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C861681975CB0C002D13E4 /* libGeLoFirmwareLibrary-public.a */; };
 		AB0759CF18F6E5AE003269F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0759CE18F6E5AE003269F7 /* Foundation.framework */; };
 		AB0759D118F6E5AE003269F7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0759D018F6E5AE003269F7 /* CoreGraphics.framework */; };
 		AB0759D318F6E5AE003269F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0759D218F6E5AE003269F7 /* UIKit.framework */; };
@@ -54,9 +54,9 @@
 
 /* Begin PBXFileReference section */
 		036CE64C2AB14D118E3C6499 /* Pods-GeLoBeaconOTAConfiguration.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeLoBeaconOTAConfiguration.xcconfig"; path = "Pods/Pods-GeLoBeaconOTAConfiguration.xcconfig"; sourceTree = "<group>"; };
+		54315285198046F800778383 /* libGeLoFirmwareLibrary-public.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libGeLoFirmwareLibrary-public.a"; sourceTree = "<group>"; };
 		54C8615B1975AAB7002D13E4 /* GeLoConnectableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeLoConnectableViewController.h; sourceTree = "<group>"; };
 		54C8615C1975AAB7002D13E4 /* GeLoConnectableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeLoConnectableViewController.m; sourceTree = "<group>"; };
-		54C861681975CB0C002D13E4 /* libGeLoFirmwareLibrary-public.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libGeLoFirmwareLibrary-public.a"; path = "../../Library/Developer/Xcode/DerivedData/GeLoFirmwareLibrary-dvlpihkepxrfhhdnjwsscjvtgjis/Build/Products/Debug-iphoneos/libGeLoFirmwareLibrary-public.a"; sourceTree = "<group>"; };
 		5C3F94F3F9EF432FBD9AC920 /* libPods-GeLoBeaconOTAConfiguration.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GeLoBeaconOTAConfiguration.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB0759CB18F6E5AE003269F7 /* GeLoBeaconOTAConfiguration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeLoBeaconOTAConfiguration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB0759CE18F6E5AE003269F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -115,7 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54C861691975CB0C002D13E4 /* libGeLoFirmwareLibrary-public.a in Frameworks */,
+				54315286198046F800778383 /* libGeLoFirmwareLibrary-public.a in Frameworks */,
 				AB075ACE18F839D7003269F7 /* CoreBluetooth.framework in Frameworks */,
 				AB0759D118F6E5AE003269F7 /* CoreGraphics.framework in Frameworks */,
 				AB0759D318F6E5AE003269F7 /* UIKit.framework in Frameworks */,
@@ -160,7 +160,7 @@
 		AB0759CD18F6E5AE003269F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				54C861681975CB0C002D13E4 /* libGeLoFirmwareLibrary-public.a */,
+				54315285198046F800778383 /* libGeLoFirmwareLibrary-public.a */,
 				AB075ACD18F839D7003269F7 /* CoreBluetooth.framework */,
 				AB0759CE18F6E5AE003269F7 /* Foundation.framework */,
 				AB0759D018F6E5AE003269F7 /* CoreGraphics.framework */,
