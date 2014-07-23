@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="GVr-Ao-tx4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="GVr-Ao-tx4">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -153,6 +153,7 @@
                         <segue destination="TIg-ZX-Ek0" kind="push" identifier="pushEditAdvChannels" id="217-fM-xMt"/>
                         <segue destination="GcE-KN-L58" kind="push" identifier="pushEditAdvPower" id="w6F-Ua-RlZ"/>
                         <segue destination="psX-pR-IoI" kind="push" identifier="pushFactoryReset" id="Jub-8I-w0L"/>
+                        <segue destination="n5x-9n-c6F" kind="push" identifier="pushEditConnectable" id="xOr-v2-TqB"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XCw-FO-LGN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -558,7 +559,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="This the minor identifier associated with this beacon.   It can range from 0 to 65,535." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTs-sb-FEk">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="This the minor identifier associated with this beacon.   It can range from 1 to 65,535." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTs-sb-FEk">
                                 <rect key="frame" x="20" y="170" width="280" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -915,6 +916,100 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zoK-Zg-BAR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1602" y="839"/>
+        </scene>
+        <!--Ge Lo Connectable View Controller-->
+        <scene sceneID="Ln9-kD-EUq">
+            <objects>
+                <viewController id="n5x-9n-c6F" customClass="GeLoConnectableViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sfc-bf-eEM"/>
+                        <viewControllerLayoutGuide type="bottom" id="xWu-A8-o6O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5fC-xx-FGZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OZE-U4-fUC">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="slb-Le-iVM"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="zO3-hN-MUX"/>
+                                </constraints>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfk-wF-yig">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="AgV-9A-rko"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem id="SMh-PW-UZa">
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="7Th-kp-TIm">
+                                            <connections>
+                                                <action selector="cancel:" destination="n5x-9n-c6F" id="PW9-Y1-R2L"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Save" id="Kd2-gZ-fvQ">
+                                            <connections>
+                                                <action selector="save:" destination="n5x-9n-c6F" id="cJS-Ih-HVC"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONNECTABLE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NuD-1K-dwB">
+                                <rect key="frame" x="20" y="84" width="280" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIu-fY-bpt">
+                                <rect key="frame" x="20" y="201" width="280" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">The tells the beacon to act as though it were connectable during normal operation.
+
+This will significantly reduce battery life, but is required for some iOS devices to recognize the beacon.</string>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K3i-Xa-fa8">
+                                <rect key="frame" x="251" y="139" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="NuD-1K-dwB" secondAttribute="trailing" constant="20" id="2dg-ai-wil"/>
+                            <constraint firstAttribute="trailing" secondItem="OZE-U4-fUC" secondAttribute="trailing" id="CUX-zM-2aT"/>
+                            <constraint firstItem="OZE-U4-fUC" firstAttribute="leading" secondItem="5fC-xx-FGZ" secondAttribute="leading" id="Erq-xo-oNP"/>
+                            <constraint firstItem="OZE-U4-fUC" firstAttribute="top" secondItem="sfc-bf-eEM" secondAttribute="bottom" constant="-64" id="SfK-Sk-JpE"/>
+                            <constraint firstAttribute="trailing" secondItem="OZE-U4-fUC" secondAttribute="trailing" id="THj-yE-hfl"/>
+                            <constraint firstItem="xWu-A8-o6O" firstAttribute="top" secondItem="VIu-fY-bpt" secondAttribute="bottom" constant="257" id="Tes-om-R94"/>
+                            <constraint firstItem="nfk-wF-yig" firstAttribute="leading" secondItem="5fC-xx-FGZ" secondAttribute="leading" id="W4B-gM-kcf"/>
+                            <constraint firstItem="VIu-fY-bpt" firstAttribute="leading" secondItem="5fC-xx-FGZ" secondAttribute="leading" constant="20" id="Wef-4v-bUB"/>
+                            <constraint firstItem="NuD-1K-dwB" firstAttribute="leading" secondItem="5fC-xx-FGZ" secondAttribute="leading" constant="20" id="XwW-dp-bdX"/>
+                            <constraint firstItem="VIu-fY-bpt" firstAttribute="trailing" secondItem="K3i-Xa-fa8" secondAttribute="trailing" id="ayN-s2-gCi"/>
+                            <constraint firstItem="NuD-1K-dwB" firstAttribute="top" secondItem="sfc-bf-eEM" secondAttribute="bottom" constant="20" id="bor-Qu-Pfd"/>
+                            <constraint firstAttribute="trailing" secondItem="nfk-wF-yig" secondAttribute="trailing" id="fHL-vJ-4XT"/>
+                            <constraint firstItem="VIu-fY-bpt" firstAttribute="top" secondItem="K3i-Xa-fa8" secondAttribute="bottom" constant="31" id="i7B-ZG-dYC"/>
+                            <constraint firstItem="nfk-wF-yig" firstAttribute="top" secondItem="OZE-U4-fUC" secondAttribute="top" constant="22" id="k33-cC-1io"/>
+                            <constraint firstItem="OZE-U4-fUC" firstAttribute="top" secondItem="sfc-bf-eEM" secondAttribute="bottom" constant="-64" id="tts-61-eaw"/>
+                            <constraint firstItem="OZE-U4-fUC" firstAttribute="leading" secondItem="5fC-xx-FGZ" secondAttribute="leading" id="vpN-IQ-ceZ"/>
+                            <constraint firstAttribute="trailing" secondItem="VIu-fY-bpt" secondAttribute="trailing" constant="20" id="zWC-ES-lNs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="LOV-kP-U2c"/>
+                    <connections>
+                        <outlet property="connectableSwitch" destination="K3i-Xa-fa8" id="UKa-9S-fok"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vMM-RM-MRT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2009" y="839"/>
         </scene>
     </scenes>
     <resources>
