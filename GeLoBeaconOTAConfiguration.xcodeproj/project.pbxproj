@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5437326A1AD2C897002D132F /* libGeLoFirmwareLibrary-public.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 543732691AD2C897002D132F /* libGeLoFirmwareLibrary-public.a */; };
+		54C8615D1975AAB7002D13E4 /* GeLoConnectableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C8615C1975AAB7002D13E4 /* GeLoConnectableViewController.m */; };
 		AB0759CF18F6E5AE003269F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0759CE18F6E5AE003269F7 /* Foundation.framework */; };
 		AB0759D118F6E5AE003269F7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0759D018F6E5AE003269F7 /* CoreGraphics.framework */; };
 		AB0759D318F6E5AE003269F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0759D218F6E5AE003269F7 /* UIKit.framework */; };
@@ -15,7 +17,6 @@
 		AB0759DF18F6E5AE003269F7 /* GeLoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0759DE18F6E5AE003269F7 /* GeLoAppDelegate.m */; };
 		AB0759E218F6E5AE003269F7 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB0759E018F6E5AE003269F7 /* Main_iPhone.storyboard */; };
 		AB0759EA18F6E5AE003269F7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB0759E918F6E5AE003269F7 /* Images.xcassets */; };
-		AB0759F118F6E5AE003269F7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0759F018F6E5AE003269F7 /* XCTest.framework */; };
 		AB0759F218F6E5AE003269F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0759CE18F6E5AE003269F7 /* Foundation.framework */; };
 		AB0759F318F6E5AE003269F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0759D218F6E5AE003269F7 /* UIKit.framework */; };
 		AB0759FB18F6E5AE003269F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB0759F918F6E5AE003269F7 /* InfoPlist.strings */; };
@@ -25,7 +26,6 @@
 		AB075ACE18F839D7003269F7 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB075ACD18F839D7003269F7 /* CoreBluetooth.framework */; };
 		AB075AD118F860CF003269F7 /* GeLoDevicePropertyListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB075AD018F860CF003269F7 /* GeLoDevicePropertyListViewController.m */; };
 		AB50D3AB1911650400517A60 /* lib in Resources */ = {isa = PBXBuildFile; fileRef = AB50D3AA1911650400517A60 /* lib */; };
-		AB50D3AD1911652400517A60 /* libGeLoFirmwareLibrary-public.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB50D3AC1911652400517A60 /* libGeLoFirmwareLibrary-public.a */; };
 		AB56132018FDC060002819B7 /* GeLoAdvIntervalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB56131F18FDC060002819B7 /* GeLoAdvIntervalViewController.m */; };
 		AB56132318FDC430002819B7 /* GeLoAdvUUIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB56132218FDC430002819B7 /* GeLoAdvUUIDViewController.m */; };
 		AB56132618FDC43B002819B7 /* GeLoAdvMajorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB56132518FDC43B002819B7 /* GeLoAdvMajorViewController.m */; };
@@ -53,6 +53,9 @@
 
 /* Begin PBXFileReference section */
 		036CE64C2AB14D118E3C6499 /* Pods-GeLoBeaconOTAConfiguration.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeLoBeaconOTAConfiguration.xcconfig"; path = "Pods/Pods-GeLoBeaconOTAConfiguration.xcconfig"; sourceTree = "<group>"; };
+		543732691AD2C897002D132F /* libGeLoFirmwareLibrary-public.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libGeLoFirmwareLibrary-public.a"; path = "GeLoBeaconOTAConfiguration/lib/libGeLoFirmwareLibrary-public.a"; sourceTree = "<group>"; };
+		54C8615B1975AAB7002D13E4 /* GeLoConnectableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeLoConnectableViewController.h; sourceTree = "<group>"; };
+		54C8615C1975AAB7002D13E4 /* GeLoConnectableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeLoConnectableViewController.m; sourceTree = "<group>"; };
 		5C3F94F3F9EF432FBD9AC920 /* libPods-GeLoBeaconOTAConfiguration.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GeLoBeaconOTAConfiguration.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB0759CB18F6E5AE003269F7 /* GeLoBeaconOTAConfiguration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeLoBeaconOTAConfiguration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB0759CE18F6E5AE003269F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -67,7 +70,6 @@
 		AB0759E118F6E5AE003269F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		AB0759E918F6E5AE003269F7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AB0759EF18F6E5AE003269F7 /* GeLoBeaconOTAConfigurationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeLoBeaconOTAConfigurationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB0759F018F6E5AE003269F7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		AB0759F818F6E5AE003269F7 /* GeLoBeaconOTAConfigurationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GeLoBeaconOTAConfigurationTests-Info.plist"; sourceTree = "<group>"; };
 		AB0759FA18F6E5AE003269F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AB0759FC18F6E5AE003269F7 /* GeLoBeaconOTAConfigurationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeLoBeaconOTAConfigurationTests.m; sourceTree = "<group>"; };
@@ -79,7 +81,6 @@
 		AB075ACF18F860CF003269F7 /* GeLoDevicePropertyListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeLoDevicePropertyListViewController.h; sourceTree = "<group>"; };
 		AB075AD018F860CF003269F7 /* GeLoDevicePropertyListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeLoDevicePropertyListViewController.m; sourceTree = "<group>"; };
 		AB50D3AA1911650400517A60 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lib; sourceTree = "<group>"; };
-		AB50D3AC1911652400517A60 /* libGeLoFirmwareLibrary-public.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libGeLoFirmwareLibrary-public.a"; path = "GeLoBeaconOTAConfiguration/lib/libGeLoFirmwareLibrary-public.a"; sourceTree = "<group>"; };
 		AB56131E18FDC060002819B7 /* GeLoAdvIntervalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeLoAdvIntervalViewController.h; sourceTree = "<group>"; };
 		AB56131F18FDC060002819B7 /* GeLoAdvIntervalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeLoAdvIntervalViewController.m; sourceTree = "<group>"; };
 		AB56132118FDC430002819B7 /* GeLoAdvUUIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeLoAdvUUIDViewController.h; sourceTree = "<group>"; };
@@ -112,7 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB50D3AD1911652400517A60 /* libGeLoFirmwareLibrary-public.a in Frameworks */,
+				5437326A1AD2C897002D132F /* libGeLoFirmwareLibrary-public.a in Frameworks */,
 				AB075ACE18F839D7003269F7 /* CoreBluetooth.framework in Frameworks */,
 				AB0759D118F6E5AE003269F7 /* CoreGraphics.framework in Frameworks */,
 				AB0759D318F6E5AE003269F7 /* UIKit.framework in Frameworks */,
@@ -125,7 +126,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB0759F118F6E5AE003269F7 /* XCTest.framework in Frameworks */,
 				AB0759F318F6E5AE003269F7 /* UIKit.framework in Frameworks */,
 				AB0759F218F6E5AE003269F7 /* Foundation.framework in Frameworks */,
 			);
@@ -157,12 +157,11 @@
 		AB0759CD18F6E5AE003269F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AB50D3AC1911652400517A60 /* libGeLoFirmwareLibrary-public.a */,
+				543732691AD2C897002D132F /* libGeLoFirmwareLibrary-public.a */,
 				AB075ACD18F839D7003269F7 /* CoreBluetooth.framework */,
 				AB0759CE18F6E5AE003269F7 /* Foundation.framework */,
 				AB0759D018F6E5AE003269F7 /* CoreGraphics.framework */,
 				AB0759D218F6E5AE003269F7 /* UIKit.framework */,
-				AB0759F018F6E5AE003269F7 /* XCTest.framework */,
 				5C3F94F3F9EF432FBD9AC920 /* libPods-GeLoBeaconOTAConfiguration.a */,
 			);
 			name = Frameworks;
@@ -240,6 +239,8 @@
 				AB56133418FDD811002819B7 /* GeLoPropertyViewController.m */,
 				AB56133B19016A2B002819B7 /* GeLoFactoryResetViewController.h */,
 				AB56133C19016A2B002819B7 /* GeLoFactoryResetViewController.m */,
+				54C8615B1975AAB7002D13E4 /* GeLoConnectableViewController.h */,
+				54C8615C1975AAB7002D13E4 /* GeLoConnectableViewController.m */,
 				AB561345190575B5002819B7 /* GeLoDeviceListViewController.h */,
 				AB561346190575B5002819B7 /* GeLoDeviceListViewController.m */,
 			);
@@ -406,6 +407,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54C8615D1975AAB7002D13E4 /* GeLoConnectableViewController.m in Sources */,
 				AB56133218FDC752002819B7 /* GeLoAdvPowerViewController.m in Sources */,
 				AB56132618FDC43B002819B7 /* GeLoAdvMajorViewController.m in Sources */,
 				AB0759DB18F6E5AE003269F7 /* main.m in Sources */,
@@ -565,6 +567,7 @@
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GeLoFirmwareUpdater-ddfjmlyubycbmbbvmoescpswdzqo/Build/Products/Debug-iphoneos",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/GeLoBeaconOTAConfiguration/lib",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GeLoFirmwareLibrary-dvlpihkepxrfhhdnjwsscjvtgjis/Build/Products/Debug-iphoneos",
 				);
 				OTHER_LDFLAGS = "-all_load ";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -594,6 +597,7 @@
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GeLoFirmwareUpdater-ddfjmlyubycbmbbvmoescpswdzqo/Build/Products/Debug-iphoneos",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/GeLoBeaconOTAConfiguration/lib",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GeLoFirmwareLibrary-dvlpihkepxrfhhdnjwsscjvtgjis/Build/Products/Debug-iphoneos",
 				);
 				OTHER_LDFLAGS = "-all_load ";
 				PRODUCT_NAME = "$(TARGET_NAME)";

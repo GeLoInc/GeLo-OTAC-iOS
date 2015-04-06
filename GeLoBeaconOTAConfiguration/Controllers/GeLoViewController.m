@@ -211,7 +211,7 @@ typedef NS_ENUM(NSUInteger, BeaconAnimation){
     self.statusLabel.text = @"Connected";
     [self.activityIndicator stopAnimating];
     self.device = notification.object;
-    [self performSegueWithIdentifier:@"deviceConfigSegue" sender:self];
+    [self.navigationController.topViewController performSegueWithIdentifier:@"deviceConfigSegue" sender:self];
 }
 
 - (void) authenticationFailure: (NSNotification *) notification {
@@ -221,5 +221,10 @@ typedef NS_ENUM(NSUInteger, BeaconAnimation){
     self.scanButton.enabled = YES;
 }
 
+- (IBAction)close:(id)sender {
+	[self dismissViewControllerAnimated:YES completion:^{
+
+	}];
+}
 
 @end

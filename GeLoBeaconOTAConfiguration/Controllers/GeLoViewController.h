@@ -24,4 +24,6 @@
  * Starts scanning for GeLo beacons.
  */
 - (IBAction)scan:(id)sender;
+- (IBAction)close:(id)sender;
+
 @end

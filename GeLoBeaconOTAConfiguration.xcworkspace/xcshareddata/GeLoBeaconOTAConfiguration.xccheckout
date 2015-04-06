@@ -10,6 +10,8 @@
 	<string>GeLoBeaconOTAConfiguration</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>235936991D06FD16D4156A95D9CE37813812419B</key>
+		<string>https://github.com/GeLoInc/GeLo-Beacon-OTA-Configuration-iOS.git</string>
 		<key>83ED03E0-5AE0-4DA9-BB38-911EAB38DC0A</key>
 		<string>ssh://github.com/GeLoInc/GeLo-Beacon-OTA-Configuration-iOS.git</string>
 	</dict>
@@ -17,17 +19,27 @@
 	<string>GeLoBeaconOTAConfiguration.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>83ED03E0-5AE0-4DA9-BB38-911EAB38DC0A</key>
+		<key>235936991D06FD16D4156A95D9CE37813812419B</key>
 		<string>..</string>
+		<key>83ED03E0-5AE0-4DA9-BB38-911EAB38DC0A</key>
+		<string>../../GeLoBeaconOTAConfiguration</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/GeLoInc/GeLo-Beacon-OTA-Configuration-iOS.git</string>
+	<string>https://github.com/GeLoInc/GeLo-Beacon-OTA-Configuration-iOS.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>83ED03E0-5AE0-4DA9-BB38-911EAB38DC0A</string>
+	<string>235936991D06FD16D4156A95D9CE37813812419B</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>235936991D06FD16D4156A95D9CE37813812419B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GeLo-Beacon-OTA-Configuration-iOS</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

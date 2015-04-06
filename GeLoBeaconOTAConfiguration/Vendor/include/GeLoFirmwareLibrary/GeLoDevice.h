@@ -25,6 +25,7 @@ typedef NS_ENUM(NSUInteger, GeLoDeviceProperty) {
   GeLoDevicePropertyAdvertisingChannelMap,
   GeLoDevicePropertyAdvertisingUUID,
   GeLoDevicePropertyAdvertisingPasscode,
+  GeLoDevicePropertyAdvertisingConnectable,
   GeLoDevicePropertyFactoryReset
 };
 
@@ -110,6 +111,11 @@ typedef void(^GeLoDevicePropertyChangeBlock)(void);
 @property (nonatomic) NSInteger advertisingCalibratedPower;
 @property (nonatomic) BOOL advertisingCalibratedPowerLoaded;
 
+@property (nonatomic) NSInteger advertisingConnectable;
+@property (nonatomic) BOOL willAdvertiseConnectable;
+@property (readonly) NSString *advertisingConnectableString;
+@property (nonatomic) BOOL advertisingConnectableLoaded;
+- (void)setAdvertisingConnectableState:(BOOL)on;
 
 @end
 
